@@ -48,7 +48,7 @@ const dnd = () => {
     return (
         <div className="Api-container">
             <div className="DNDSpells-header">
-                <h2>Hechizos de D&D</h2>
+                <h2 style={{color:"#c0392b", fontSize:"2.5rem"}}>Hechizos de D&D</h2>
                 <img className="DNDSpells-img" src="/img/dnd.avif" alt="Imagen de DND" />
             </div>
 
@@ -76,9 +76,9 @@ export default dnd;
 export const SpellCard = ({ name, desc, higher_level, level }) => {
     return (<div className="SpellCard">
         <h3 className="SpellCard-h3">{name}</h3>
-        <h4>Level: {level}</h4>
-        <p className="SpellCard-p"><strong>Description:</strong> {desc}</p>
-        <p className="SpellCard-p"><strong>Higher Level Effect:</strong> {higher_level}</p>
+        <h4 className="SpellCard-h4">Level: {level}</h4>
+        <p className="SpellCard-p"><strong className="SpellCard-strong">Description:</strong> {desc}</p>
+        <p className="SpellCard-p"><strong className="SpellCard-strong">Higher Level Effect:</strong> {higher_level}</p>
     </div>
 
     );

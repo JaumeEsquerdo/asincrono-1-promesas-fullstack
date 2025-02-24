@@ -170,3 +170,13 @@ button:hover {
   object-fit: cover;
   border-radius: 20px;
 }
+
+.SpellCard-h3{
+  color: aquamarine;
+}
+.SpellCard-p{
+  color: #dadbe7;
+}
+.SpellCard-strong,.SpellCard-h4{
+  color: #646cff;
+}
