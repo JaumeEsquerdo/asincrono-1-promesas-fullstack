@@ -47,6 +47,9 @@ button {
 button:hover {
   border-color: #646cff;
 }
+ul{
+  list-style: none;
+}
 
 .Body{
   background-color: #1a1a1a;
@@ -179,4 +182,37 @@ button:hover {
 }
 .SpellCard-strong,.SpellCard-h4{
   color: #646cff;
+}
+
+/* RAWG GAMES */
+
+.Games{
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+}
+.Game{
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: #272838;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin: 1rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.Game-img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.Games-title{
+  width: 100%;
+  display: flex;
+  margin: 2rem 0;
+  justify-content: center;
+  color: #c55530;
 }
