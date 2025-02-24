@@ -12,7 +12,6 @@ const Secciones = () => {
     return (
         <main className='Main'>
 
-            <h2 className='Secciones-title'>Secciones</h2>
             <div className='Secciones'>
 
                 {
