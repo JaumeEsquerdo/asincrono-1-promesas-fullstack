@@ -58,8 +58,14 @@ ul{
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
   
+}
+.Root{
+  height: 100%;
+  width: 100%;
 }
 
 /* HEADER */
@@ -75,6 +81,16 @@ ul{
 .Header-link{
   font-size: 2rem;
 }
+/* HEADER del home */
+ .Header-home{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+} 
 
 /* MAIN */
 .Main{
