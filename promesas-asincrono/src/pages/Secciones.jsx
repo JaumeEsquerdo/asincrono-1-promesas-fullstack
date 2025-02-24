@@ -5,7 +5,7 @@ const Secciones = () => {
     const apis = [
         { name: "D&D (Dragones y mazmorras)", path: "dnd", color: "#c0392b", img: "/img/dnd.avif" },
         { name: "RAWG (Videojuegos)", path: "rawg", color: "#c5552b", img: "/img/rawg.jpg" },
-        { name: "Pokemon", path: "pokemon", color: "#c1392s", img: "/img/pokemon.jpg" },
+        { name: "Pokemon", path: "pokemon", color: "#d8c61c", img: "/img/pokemon.jpg" },
     ];
 
 

@@ -223,7 +223,7 @@ ul {
 }
 
 .Game {
-  width: 600px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   background-color: #272838;
@@ -248,4 +248,58 @@ ul {
   margin: 2rem 0;
   justify-content: center;
   color: #c55530;
+}
+.Game-h2{
+  color: #d68367;
+padding-bottom:20px ;}
+.Game-h3{
+  display: flex;
+  justify-content: center;
+  color: rgb(213, 245, 125);
+}
+.Game-platforms{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.Game-li{
+  padding: 5px 20px;
+}
+.Game-launch{
+  font-style: italic;
+}
+
+
+/* POKEMONS */
+.Pokemons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+
+}
+.Pokemons-ul{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 40px 0;
+}
+.Pokemon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 10px;
+  background-color: #272838;
+  transition: transform 1s ease-in-out;
+  box-shadow: 0 0 10px rgba(83, 79, 79, 0.4);
+
+}
+.Pokemon:hover{
+  transform: scale(1.2);
+}
+
+.Pokemon-name{
+  color: #d1d47b;
 }

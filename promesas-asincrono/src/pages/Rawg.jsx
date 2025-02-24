@@ -52,7 +52,7 @@ export const Game = ({ game }) => {
 
         <h2 className="Game-h2">{name}</h2>
         <img className="Game-img" src={background_image} alt={`Imagen de ${name}`} />
-        <p>Fecha de lanzammiento: {released}</p>
+        <p className="Game-launch">Fecha de lanzammiento: {released}</p>
         <div className="Game-rating">
             <h3 className="Game-h3" >Rating</h3>
             <p>{rating}</p>
@@ -61,7 +61,7 @@ export const Game = ({ game }) => {
             <h3 className="Game-h3">Platforms</h3>
             <ul className="Game-platforms">
                 {platforms.map((platform, i) => (
-                    <li key={i}>
+                    <li className="Game-li" key={i}>
                         {platform.platform.name}
                     </li>
                 ))}
