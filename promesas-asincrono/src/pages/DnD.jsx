@@ -6,9 +6,11 @@ const dnd = () => {
     const [spells, setSpells] = useState([]);
 
     useEffect(() => {
+        // controller permite abortar la solicitud, y se mete en signal para poder utilizarla
         const controller = new AbortController();
         const fetchSpells = async () => {
             try {
+                //options nos permite configurar el request
                 const options = {
                     method: 'GET',
                     headers: { "Content-Type": "application/json" },
@@ -48,7 +50,7 @@ const dnd = () => {
     return (
         <div className="Api-container">
             <div className="DNDSpells-header">
-                <h2 style={{color:"#c0392b", fontSize:"2.5rem"}}>Hechizos de D&D</h2>
+                <h2 style={{ color: "#c0392b", fontSize: "2.5rem" }}>Algunos hechizos de D&D</h2>
                 <img className="DNDSpells-img" src="/img/dnd.avif" alt="Imagen de DND" />
             </div>
 
