@@ -31,11 +31,11 @@ const router = createBrowserRouter([
         //     element:<Home/>
         // },
         {
-            path: 'secciones',
+            path: '/secciones',
             element: <Secciones/>
         },
         {
-            path: 'secciones/:seccionId',
+            path: '/secciones/:seccionId',
             element: <SeccionDinamica/>
         }
         ,
