@@ -3,6 +3,8 @@ import { use, useEffect, useState } from "react";
 const Pokemon = () => {
     const [pokemons, setPokemons] = useState([])
 
+    const {VITE_POKEMON} = import.meta.env
+
     useEffect(()=>{
         const controller = new AbortController()
         const options = {
@@ -13,7 +15,7 @@ const Pokemon = () => {
 
         const fetchPokemons = async () =>{
             try{
-                const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=10", options)
+                const response = await fetch(VITE_POKEMON, options)
                 if(!response.ok) throw new Error("Error al obtener la lista de Pokemon")
 
                     const data = await response.json()

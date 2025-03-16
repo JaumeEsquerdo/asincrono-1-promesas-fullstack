@@ -5,6 +5,8 @@ const dnd = () => {
 
     const [spells, setSpells] = useState([]);
 
+    const {VITE_DND} = import.meta.env
+
     useEffect(() => {
         // controller permite abortar la solicitud, y se mete en signal para poder utilizarla
         const controller = new AbortController();
@@ -17,7 +19,7 @@ const dnd = () => {
                     signal: controller.signal
                 };
 
-                const response = await fetch("https://www.dnd5eapi.co/api/spells", options);
+                const response = await fetch(VITE_DND, options);
                 if (!response.ok) throw new Error("Error en la petición fetch");
 
                 const data = await response.json();

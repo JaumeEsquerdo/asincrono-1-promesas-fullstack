@@ -4,6 +4,7 @@ const Rawg = () => {
 
     const [games, setGames] = useState([]);
 
+    const {VITE_RAWG} = import.meta.env
 
     useEffect(() => {
         const controller = new AbortController();
@@ -15,7 +16,7 @@ const Rawg = () => {
                     signal: controller.signal
                 };
 
-                const response = await fetch("https://api.rawg.io/api/games?key=f442fa353b8747c095b858ab3b8a77b4", options);
+                const response = await fetch( VITE_RAWG, options);
                 if (!response.ok) throw new Error("Error en la petición fetch");
 
                 const data = await response.json();

@@ -1,0 +1,3 @@
+VITE_DND = "https://www.dnd5eapi.co/api/spells"
+VITE_POKEMON= "https://pokeapi.co/api/v2/pokemon?limit=10"
+VITE_RAWG= "https://api.rawg.io/api/games?key=f442fa353b8747c095b858ab3b8a77b4"
