@@ -3,9 +3,7 @@ import { createBrowserRouter } from "react-router";
 //importe de páginas
 import Home from '../../pages/Home';
 import Secciones from '@/pages/Secciones'
-import Dnd from '@/pages/Dnd';
-import Rawg from '@/pages/Rawg';
-import Pokemon from '@/pages/Pokemon';
+
 
 // importar páginas especiales
 import Layout from '@/Layout';
