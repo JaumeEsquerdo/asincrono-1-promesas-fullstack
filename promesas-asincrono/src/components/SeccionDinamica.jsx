@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import Dnd from "@/pages/Dnd.jsx";
+import Dnd from "@/pages/DnD.jsx";
 import Rawg from "@/pages/Rawg.jsx";
 import Pokemon from "@/pages/Pokemon.jsx";
 
