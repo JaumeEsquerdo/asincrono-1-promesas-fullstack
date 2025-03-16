@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 
-const dnd = () => {
+const DnD = () => {
 
     const [spells, setSpells] = useState([]);
 
@@ -75,7 +75,7 @@ const dnd = () => {
     );
 }
 
-export default dnd;
+export default DnD;
 
 export const SpellCard = ({ name, desc, higher_level, level }) => {
     return (<div className="SpellCard">
