@@ -8,5 +8,8 @@ export default defineConfig({
     alias: {
       '@': "/src", // para hacer un comando y poder linkear desde src y no pensar en ./ ../
     }
+  },
+  build: {
+    outDir: 'dist', // Carpeta donde se construye el proyecto para producción
   }
 })
